@@ -59,11 +59,11 @@ body {
     grid-column: span 2;
 }
 
-#igual {
+#equal {
     grid-row: span 2;
     background-color: rgb(189, 97, 97);
 }
 
-#igual:hover {
+#equal:hover {
     background-color: rgb(235, 130, 130) ;
 }
