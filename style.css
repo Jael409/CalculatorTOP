@@ -1,3 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
-    background-color: whitesmoke;
+    min-height: 100vh;
+    background-color: rgb(160, 148, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    background-color: rgb(189, 175, 157);
+    color: rgb(97, 94, 89);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 12px;
+    gap: 5px;
+    box-shadow: 1px 1px rgb(85, 43, 45);
+}
+
+.screen {
+    grid-column: 1 / -1;
+    background-color: rgba(241, 230, 214, 0.575);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.btn {
+    background-color:  rgb(189, 175, 157);
+    color:  rgb(43, 42, 40);
+    border-radius: 10px;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(190, 184, 174) ;
+}
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: rgb(189, 97, 97);
+}
+
+#igual:hover {
+    background-color: rgb(235, 130, 130) ;
 }
