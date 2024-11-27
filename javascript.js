@@ -11,19 +11,28 @@ buttons.forEach(button => {
         }
 
         if (button.id === "delete") {
-            if (screen.textContent.length === 1) {
+            if (screen.textContent.length === 1 || screen.textContent === "ERROR") {
                 screen.textContent = "0";
             } else {
                 screen.textContent = screen.textContent.slice(0, -1);
             }
             return;
         }
-        
 
-        if (screen.textContent === "0") {
+        if (button.id === "equal") {
+            try {
+                screen.textContent = eval(screen.textContent);
+            } catch {
+                screen.textContent = "ERROR";
+            }
+            return;
+        }
+        
+        if (screen.textContent === "0" || screen.textContent === "ERROR") {
             screen.textContent = buttonPress;
          } else {
              screen.textContent += buttonPress;
             }
     })
+
 })

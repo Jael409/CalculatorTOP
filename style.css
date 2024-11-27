@@ -37,6 +37,7 @@ body {
     margin-bottom: 1rem;
     font-family: monospace;
     font-weight: bold;
+    overflow: hidden;
 }
 
 .btn {
