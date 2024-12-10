@@ -11,7 +11,7 @@ buttons.forEach(button => {
         }
 
         if (button.id === "delete") {
-            if (screen.textContent.length === 1 || screen.textContent === "WHAT ARE YOU DOING?") {
+            if (screen.textContent.length === 1 || screen.textContent === "WTF?") {
                 screen.textContent = "0";
             } else {
                 screen.textContent = screen.textContent.slice(0, -1);
@@ -23,12 +23,12 @@ buttons.forEach(button => {
             try {
                 screen.textContent = eval(screen.textContent);
             } catch {
-                screen.textContent = "WHAT ARE YOU DOING?";
+                screen.textContent = "WTF?";
             }
             return;
         }
         
-        if (screen.textContent === "0" || screen.textContent === "WHAT ARE YOU DOING?") {
+        if (screen.textContent === "0" || screen.textContent === "WTF?") {
             screen.textContent = buttonPress;
          } else {
              screen.textContent += buttonPress;
